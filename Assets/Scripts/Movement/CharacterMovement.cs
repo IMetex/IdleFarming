@@ -51,7 +51,7 @@ public class CharacterMovement : MonoBehaviour
 
     private Vector3 GetNewVelocity()
     {
-        return new Vector3(_horizontal, _playerRigidbody.velocity.y, _vertical) * (_moveSpeed * Time.fixedDeltaTime);
+        return new Vector3(_horizontal, 0f, _vertical) * (_moveSpeed * Time.fixedDeltaTime);
     }
 
     private void GetMovementInput()
